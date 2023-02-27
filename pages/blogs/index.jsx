@@ -10,9 +10,12 @@ function blogs({ data }) {
             <Layout>
 
         
+        
 
 
-                <h1 className="md:text-6xl text-4xl pl-4 py-12 px-12 md:px-24 font-poppins font-semibold capitalize">All the Blogs 💖</h1>
+
+
+                {/* <h1 classNameName="md:text-6xl text-4xl pl-4 py-12 px-12 md:px-24 font-poppins font-semibold capitalize">All the Blogs 💖</h1> */}
                 <Blogs blogs={data} />
             </Layout>
         </div>

@@ -15,9 +15,9 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script src="assets/js/vendor.js"></script>
+        <script src="assets/js/vendor.js" async></script>
     
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" async></script>
 
 
       </body>
