@@ -20,6 +20,7 @@ export default function BlogForm({ setTitle, title, value, setValue, handleClick
         const filePath = crypto.randomUUID() + "-" + file.name
         try {
             const url = await uploadFile(file, filePath)
+            console.log('IMAGE->' , url)
             setImage(url)
         } catch (error) {
             return setAlert({ isShow: true, duration: 3000, message: error.message, type: "error" })
