@@ -2,10 +2,10 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-function Layout({ children }) {
+function Layout({ children ,navrelative =false }) {
     return (
         <>
-            <Navbar />
+            <Navbar navrelative={navrelative} />
             {children}
             <Footer />
         </>

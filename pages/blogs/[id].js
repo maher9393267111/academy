@@ -5,13 +5,17 @@ import Layout from "@/components/Layout";
 
 export default function blog({ data }) {
   return (
-    <Layout>
+    <Layout navrelative={true}>
+      
+
+      
       <Blog
         title={data.title}
         date={data.date}
         description={data.description}
         image={data.image}
       />
+      
     </Layout>
   );
 }
