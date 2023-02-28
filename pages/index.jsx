@@ -5,6 +5,8 @@ import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Layout from "@/components/Layout";
 import Link from "next/link";
 import Banner from "@/components/Banner";
+import AboutUsBanner from "@/components/AboutUsBanner";
+import TeamSection from "@/components/TeamSection";
 
 const cutiveMono = Cutive_Mono({
   variable: "--font-cutive-mono",
@@ -32,6 +34,10 @@ export default function Home({ data }) {
         {/* <h1 className="md:text-6xl text-4xl pl-4 py-12 px-12 md:px-24 font-poppins font-semibold capitalize">Welcome to nextjs blogs 💖</h1> */}
         <Blogs blogs={data} />
         <Link href={'/blogs'} className="w-full flex justify-end text-base font-poppins px-14 pb-5">See more</Link>
+
+        <AboutUsBanner/>
+
+        <TeamSection/>
       </Layout>
     </div>
   );
