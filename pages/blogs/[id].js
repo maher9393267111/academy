@@ -2,11 +2,13 @@ import { db } from "@/firebase";
 import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import Blog from "@/components/Blog";
 import Layout from "@/components/Layout";
+import SingleBlogBanner from "@/components/SingleBlogBanner";
 
 export default function blog({ data }) {
   return (
     <Layout navrelative={true}>
       
+      <SingleBlogBanner/>
 
       
       <Blog
