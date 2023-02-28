@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -15,9 +16,17 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script src="assets/js/vendor.js" async></script>
+        <Script 
+         type="text/javascript"
+        src="assets/js/vendor.js" 
+        strategy='beforeInteractive'
+        ></Script>
     
-    <script src="assets/js/main.js" async></script>
+    <Script
+     type="text/javascript"
+    src="assets/js/main.js" 
+    strategy='beforeInteractive'
+    ></Script>
 
 
       </body>
